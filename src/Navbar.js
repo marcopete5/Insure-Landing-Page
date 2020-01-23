@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import family from './images/image-intro-mobile.jpg';
 
 const Navbar = () => {
     const [toggled, setToggled] = useState(true)
@@ -19,9 +18,7 @@ const Navbar = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" onClick={() => setToggled(prev => !prev)}><g fill="none" fill-rule="evenodd"><path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830"><path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/></g></g></svg>
                             </div>
                         </div>
-                        <div className='nav-image'>
-                            <img src={family} alt='a family' />
-                        </div>
+                        
                     </>
                 :
                 <>
@@ -45,6 +42,12 @@ const Navbar = () => {
                 </>
                 
                 }
+                <ul className='nav-items'>
+                    <li>HOW WE WORK</li>
+                    <li>BLOG</li>
+                    <li>ACCOUNT</li>
+                    <li><p>VIEW PLANS</p></li>
+                </ul>
         </div>
     );
 };
